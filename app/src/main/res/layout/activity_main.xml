@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_green"
+    tools:context=".MainActivity">
+
+    <com.tju.tank.view.RockerView
+        android:id="@+id/rockerView1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="70dp" />
+    <!--com.tju.tank.view.XCRoundImage
+        android:id="@+id/fire"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/shoot2" /-->
+    <Button
+        android:id="@+id/Cannon_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:layout_toStartOf="@+id/Cannon_Fire"
+        android:text="左转" />
+
+    <Button
+        android:id="@+id/Cannon_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Cannon_Left"
+        android:layout_marginEnd="25dp"
+        android:text="右转" />
+
+    <Button
+        android:id="@+id/Cannon_Fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/Cannon_Right"
+        android:text="开炮" />
+
+    <Button
+        android:id="@+id/Cannon_Load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cannon_Left"
+        android:layout_marginTop="-82dp"
+        android:layout_toEndOf="@+id/Cannon_Left"
+        android:gravity="center"
+        android:text="装弹" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="250dp"
+        android:text="重生" />
+
+    <com.tju.tank.view.XCRoundImage
+        android:id="@+id/bullet_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/bullet" />
+
+    <com.tju.tank.view.XCRoundImage
+        android:id="@+id/life_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/tank1" />
+
+
+
+    <com.tju.tank.view.LifeView
+        android:id="@+id/life"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp" />
+
+    <com.tju.tank.view.LifeView
+        android:id="@+id/bullet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp" />
+
+    <!--com.tju.tank.view.LifeView
+       android:id="@+id/elife"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="170dp"
+       android:layout_marginTop="20dp" /-->
+
+   <!--<ProgressBar-->
+        <!--android:id="@+id/wait"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>
