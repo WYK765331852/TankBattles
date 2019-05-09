@@ -25,7 +25,7 @@ public class ChooseTank extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choosetank_layout);
         tank = findViewById(R.id.tank);
-        btn_main_ok = findViewById(R.id.btn_main_ok);
+        btn_main_ok = findViewById(R.id.btn_main2_ok);
         btn_main_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

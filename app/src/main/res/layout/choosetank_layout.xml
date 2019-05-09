@@ -3,67 +3,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-  <RadioGroup 
+  <RadioGroup
+      android:layout_margin="20dp"
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/tank"  
         >  
-        <RadioButton  
+        <RadioButton
+            android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="1号坦克"  
             android:id="@+id/tank1"  
             android:checked="true"  
             />  
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="2号坦克"  
             android:id="@+id/tank2"    
             />  
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="3号坦克"  
             android:id="@+id/tank3"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="4号坦克"  
             android:id="@+id/tank4"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="5号坦克"  
             android:id="@+id/tank5"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="6号坦克"  
             android:id="@+id/tank6"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="7号坦克"  
             android:id="@+id/tank7"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="8号坦克"  
             android:id="@+id/tank8"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="9号坦克"  
             android:id="@+id/tank9"    
             />
-            <RadioButton  
+            <RadioButton
+                android:layout_margin="5dp"
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:text="10号坦克"  
@@ -71,11 +82,14 @@
             />
         
     </RadioGroup>  
-    <Button  
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="#72C5BA"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:text="确定"  
-        android:id="@+id/btn_main_ok"  
+        android:id="@+id/btn_main2_ok"
         />  
 
 </LinearLayout>
