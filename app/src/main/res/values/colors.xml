@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLife0">#95EAAC</color>
+    <color name="colorLife1">#FF7170</color>
+    <color name="colorFire0">#41A9F6</color>
+    <color name="colorFire1">#536A7B</color>
+    <color name="theme">#72C5BA</color>
+</resources>

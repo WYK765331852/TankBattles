@@ -74,6 +74,11 @@ public class ControlActivity extends Activity {
     private ProgressDialog wait1;
     public String cmd = null;
 
+    private int colorLife0 = 0xFF95EAAC;
+    private int colorBullet0 = 0xFF41A9F6;
+    private int colorLife1 = 0xFFFF7170;
+    private int colorBullet1 = 0xFF536A7B;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -143,6 +148,7 @@ public class ControlActivity extends Activity {
                 // TODO Auto-generated method stub
                 cmd = "C" + MyID + "8";
                 bullet_n = 100;
+                bullet.getColor(colorBullet0);
                 bullet.getlife(bullet_n);
                 bullet.invalidate();
             }
@@ -152,8 +158,10 @@ public class ControlActivity extends Activity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 cmd = "C" + MyID + "9";
+                life.getColor(colorLife0);
                 life.getlife(life_n = 100);
                 life.invalidate();
+                bullet.getColor(colorBullet0);
                 bullet.getlife(bullet_n = 100);
                 bullet.invalidate();
             }
@@ -171,6 +179,9 @@ public class ControlActivity extends Activity {
                     bullet.post(new Runnable() {
                         @Override
                         public void run() {
+                            if (bullet_n <= 40) {
+                                bullet.getColor(colorBullet1);
+                            }
                             bullet.getlife(bullet_n);
                             bullet.invalidate();
                         }
@@ -213,9 +224,9 @@ public class ControlActivity extends Activity {
         Cannon_Load = (Button) findViewById(R.id.Cannon_Load);
         Reset = (Button) findViewById(R.id.Reset);
 //        wait = (ProgressBar) findViewById(R.id.wait);
-        life.getColor(Color.RED);
+        life.getColor(colorLife0);
         //       elife.getColor(Color.RED);
-        bullet.getColor(Color.YELLOW);
+        bullet.getColor(colorBullet0);
         life.getlife(life_n);
         life.getSize(screenWidth / 3, screenHeight / 20);
 //        elife.getSize(screenWidth / 3, screenHeight / 20);
@@ -265,10 +276,12 @@ public class ControlActivity extends Activity {
                         } else if (result.equals("G")) {
                         } else if (result.equals("D")) {
                             life_n = life_n - 10 >= 0 ? life_n - 10 : 0;
-
                             life.post(new Runnable() {
                                 @Override
                                 public void run() {
+                                    if (life_n <= 40) {
+                                        life.getColor(colorLife1);
+                                    }
                                     life.getlife(life_n);
                                     life.invalidate();
                                 }
