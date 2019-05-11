@@ -9,6 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin">
 
+    <TextView
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Choose A Pattern"
+        android:textSize="25sp" />
+
     <RadioGroup
         android:id="@+id/playmodel"
         android:layout_width="match_parent"
@@ -21,41 +29,36 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:checked="true"
-            android:text="1V1"
-            android:textSize="20sp" />
+            android:text="1V1" />
 
         <RadioButton
             android:id="@+id/m_2v2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="2V2"
-            android:textSize="20sp" />
+            android:text="2V2" />
 
         <RadioButton
             android:id="@+id/m_3v3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="3V3"
-            android:textSize="20sp" />
+            android:text="3V3" />
 
         <RadioButton
             android:id="@+id/m_4v4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="4V4"
-            android:textSize="20sp" />
+            android:text="4V4" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btn_main_ok"
-        android:textColor="#FFFFFF"
-        android:background="#72C5BA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
+        android:background="@color/theme"
         android:text="确定"
-        android:textSize="22sp" />
+        android:textColor="#FFFFFF" />
 </LinearLayout>

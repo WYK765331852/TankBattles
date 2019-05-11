@@ -47,9 +47,9 @@ public class LifeView extends View {
         int y = getTop();
 
         Paint paintB = new Paint();
-        paintB.setColor(Color.GREEN);
+        paintB.setColor(Color.WHITE);
         paintB.setStyle(Paint.Style.STROKE);
-        paintB.setStrokeWidth(5);
+        paintB.setStrokeWidth(3);
         canvas.drawRect(x, y, x + width, y + height, paintB);
         Paint paintL = new Paint();
         paintL.setColor(color);
